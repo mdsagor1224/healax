@@ -1,21 +1,10 @@
-/***************************************************
-==================== JS INDEX ======================
-****************************************************
-01. Service Slider (Home One)
-02. Team Slider (Home One)
-03. 
-04. Service Slider (Home two)
-
-****************************************************/
-
-
 
 (function($){
     "use strict";
 
 
 /*----------------------------------------*/
-/*  01. Service Slider (Home One)
+/*  Service Slider (Home One)
 /*----------------------------------------*/
 
 if ($('.vlServicetActive').length) {
@@ -53,7 +42,7 @@ if ($('.vlServicetActive').length) {
 }
 
 /*----------------------------------------*/
-/*  02. Team Slider (Home One)
+/*  Team Slider (Home One)
 /*----------------------------------------*/
 
 if ($('.vlTeamActive').length) {
@@ -90,7 +79,7 @@ if ($('.vlTeamActive').length) {
 }
 
 /*----------------------------------------*/
-/*  05. Team Slider (Home One)
+/*   Team Slider (Home One)
 /*----------------------------------------*/
 
 if ($('.vlTeamActive5').length) {
@@ -128,7 +117,7 @@ if ($('.vlTeamActive5').length) {
 
 
 /*----------------------------------------*/
-/*  07. Team Slider (Home One)
+/*  Team Slider (Home One)
 /*----------------------------------------*/
 
 if ($('.vlTeamActive7').length) {
@@ -196,14 +185,14 @@ if ($('.vlTestiomonialActive8').length) {
     const vlTestiomonialActive8 = new Swiper('.vlTestiomonialActive8', {
         slidesPerView: 1,
         spaceBetween: 30,
-      //   loop:true,
-      //   keyboard: {
-      //       enabled: true,
-      //   },
-      // autoplay: {
-      //   delay: 2500,
-      //   disableOnInteraction: false,
-      // },
+        loop:true,
+        keyboard: {
+            enabled: true,
+        },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
         navigation: {
             nextEl: ".vl-review-button-next",
             prevEl: ".vl-review-button-prev",
@@ -212,7 +201,7 @@ if ($('.vlTestiomonialActive8').length) {
 }
 
 /*----------------------------------------*/
-/*  04. Service Slider (Home two)
+/*  Service Slider (Home two)
 /*----------------------------------------*/
 
 if ($('.vlServicetActive2').length) {
@@ -251,21 +240,20 @@ if ($('.vlServicetActive2').length) {
 
 
 /*----------------------------------------*/
-/*  05. Service Slider (Home three)
+/*  Service Slider (Home three)
 /*----------------------------------------*/
-
 if ($('.vlServiceActive3').length) {
     const vlServiceActive3 = new Swiper('.vlServiceActive3', {
         slidesPerView: 1,
         spaceBetween: 30,
-		    // loop:true,
-        // keyboard: {
-        //     enabled: true,
-        // },
-        // autoplay: {
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // },
+		    loop:true,
+        keyboard: {
+            enabled: true,
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
         navigation: {
             nextEl: ".vl-review-button-next",
             prevEl: ".vl-review-button-prev",
@@ -289,7 +277,7 @@ if ($('.vlServiceActive3').length) {
 
 
 /*----------------------------------------*/
-/*  06. Service Slider (Home five)
+/*  Service Slider (Home five)
 /*----------------------------------------*/
 
 if ($('.vlServicetActive5').length) {
@@ -369,10 +357,7 @@ if ($('.vlserviceactive7').length) {
 
 
 /*----------------------------------------*/
-/*  Service Slider (Home 8)
-/*----------------------------------------*/
-/*----------------------------------------*/
-/*  02. Team Slider (Home One)
+/* Team Slider (Home One)
 /*----------------------------------------*/
 
 if ($('.vlServiceActive8').length) {
@@ -411,7 +396,7 @@ if ($('.vlServiceActive8').length) {
 
 
 /*----------------------------------------*/
-/*  02. testimonial Slider (Home 9)
+/*  testimonial Slider (Home 9)
 /*----------------------------------------*/
 
 if ($('.vlTestimonialActive9').length) {
@@ -449,7 +434,7 @@ if ($('.vlTestimonialActive9').length) {
 
 
 /*----------------------------------------*/
-/*  05. Team Slider (Home three)
+/*  Team Slider (Home three)
 /*----------------------------------------*/
 
 if ($('.vlTeamActive9').length) {
@@ -486,7 +471,7 @@ if ($('.vlTeamActive9').length) {
 }
 
 /*----------------------------------------*/
-/*  05. Team Slider (Home eight)
+/*  Team Slider (Home eight)
 /*----------------------------------------*/
 if ($('.vlTeamActive8').length) {
     const vlTeamActive8 = new Swiper('.vlTeamActive8', {
@@ -533,7 +518,6 @@ if ($('.vlTeamActive8').length) {
 /*----------------------------------------*/
 /*  case Slider (Home 5)
 /*----------------------------------------*/
-
 if ($('.vlCaseactive7').length) {
     const vlCaseactive7 = new Swiper('.vlCaseactive7', {
         slidesPerView: 5,
@@ -545,19 +529,19 @@ if ($('.vlCaseactive7').length) {
             el: ".swiper-pagination",
             clickable: true,
         },
-        // loop:true,
-        // speed: 3000,
-        // keyboard: {
-        //     enabled: true,
-        // },
-        // autoplay: {
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // },
-        // navigation: {
-        //     nextEl: ".tp-swiper-team-button-next",
-        //     prevEl: ".tp-swiper-team-button-prev",
-        // },
+        loop:true,
+        speed: 3000,
+        keyboard: {
+            enabled: true,
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".tp-swiper-team-button-next",
+            prevEl: ".tp-swiper-team-button-prev",
+        },
         breakpoints: {
             0: {
               slidesPerView: 1,
@@ -586,15 +570,15 @@ if ($('.vlCaseactive7').length) {
         el: ".swiper-pagination",
         clickable: true,
       },
-      // loop:true,
-      //   speed: 3000,
-      //   keyboard: {
-      //       enabled: true,
-      //   },
-      //   autoplay: {
-      //     delay: 2500,
-      //     disableOnInteraction: false,
-      //   },
+      loop:true,
+        speed: 3000,
+        keyboard: {
+            enabled: true,
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
       breakpoints: {
             0: {
               slidesPerView: 1,
@@ -612,7 +596,7 @@ if ($('.vlCaseactive7').length) {
     });
 
 /*----------------------------------------*/
-/*  01. Brand Slider (Home One)
+/*  Brand Slider (Home One)
 /*----------------------------------------*/
 
 if ($('.vlBrandActive').length) {
@@ -708,15 +692,15 @@ if ($('.vlBrandActive').length) {
         el: ".swiper-pagination",
         clickable: true,
       },
-      // loop:true,
-      //   speed: 3000,
-      //   keyboard: {
-      //       enabled: true,
-      //   },
-      //   autoplay: {
-      //     delay: 2500,
-      //     disableOnInteraction: false,
-      //   },
+      loop:true,
+        speed: 3000,
+        keyboard: {
+            enabled: true,
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
       breakpoints: {
             0: {
               slidesPerView: 1,
