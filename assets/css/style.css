@@ -7220,7 +7220,6 @@ p {
 
 .vl-header-area {
   z-index: 99;
-  position: relative;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 575px) {
@@ -7529,7 +7528,7 @@ p {
 .vl-home-thumb:hover .vl-thumb-btn {
   opacity: 1;
   visibility: visible;
-  top: 50%;
+  top: 45%;
   transition: 0.3s;
 }
 
@@ -7909,9 +7908,23 @@ p {
 /*----------------------------------------*/
 /*  7.10 Contact css
 /*----------------------------------------*/
+.vkl-contatc-wrap1 {
+  margin-top: -80px;
+}
+
+.vkl-contact1 {
+  position: relative;
+}
+
 .vkl-contact-bg-wrap {
   margin-left: 85px;
   margin-right: 85px;
+}
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+  .vkl-contact-bg-wrap {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 575px) {
   .vkl-contact-bg-wrap {
@@ -12160,6 +12173,18 @@ input[type=date]:focus {
   width: 100%;
   height: 700px;
   object-fit: cover;
+}
+
+.vkl-banner-large-thumb {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+
+.vkl-banner-thumb-shape1 {
+  position: absolute;
+  top: -8px;
 }
 
 .vkl-appointment-flex {

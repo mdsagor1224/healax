@@ -4,9 +4,20 @@
 /*  7.10 Contact css
 /*----------------------------------------*/
 
+.vkl-contatc-wrap1 {
+    margin-top: -80px;
+}
+.vkl-contact1{
+    position: relative;
+}
+
 .vkl-contact-bg-wrap{
     margin-left: 85px;
     margin-right: 85px;
+    @media #{$xxl}{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
     @media #{$lg,$md,$xs}{
        margin-left: 0;
        margin-right: 0;

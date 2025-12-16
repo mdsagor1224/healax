@@ -68,7 +68,18 @@
       }
     });
 
+//========== Parallaxie ============= //
+var $window = $(window);
+var $parallaxie = $('.parallaxie');
 
+if ($parallaxie.length && ($window.width() > 991)) {
+    if ($window.width() > 768) {
+        $parallaxie.parallaxie({
+            speed: 0.55,
+            offset: 0,
+        });
+    }
+}
 	
 
 	/* ================================
