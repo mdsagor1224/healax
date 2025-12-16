@@ -135,6 +135,7 @@
   --vkl-text-text-5: #023118;
   --vkl-text-text-6: #FACA15;
   --vkl-text-text-7: #FF7B22;
+  --vkl-text-text-8: #043119;
   --vkl-bg-bg-1: #E4EBE7;
   --vkl-bg-bg-2: #F2F6F4;
   --vkl-bg-bg-3: #1F684E;
@@ -924,6 +925,95 @@
 .vkl-primary-btn-8:hover::after {
   height: 100%;
   transition: 0.3s;
+}
+
+.vkl-btn-primary-2 {
+  background: var(--vkl-text-text-1);
+  font-size: var(--vkl-font-size-font-s18);
+  line-height: var(--vkl-specing-height18);
+  font-weight: var(--vkl-weight-semibold);
+  display: inline-block;
+  padding: 10px !important;
+  padding-left: 24px !important;
+  border-radius: 88px;
+  transition: 0.3s;
+}
+.vkl-btn-primary-2 span.arrow-icon {
+  height: 32px;
+  width: 32px;
+  border-radius: 50px;
+  background: var(--vkl-text-text-white);
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 32px;
+  text-align: center;
+  transform: rotate(-45deg);
+}
+.vkl-btn-primary-2:hover {
+  background: var(--vkl-text-text-black);
+  color: var(--vkl-text-text-white);
+  transition: 0.3s;
+}
+.vkl-btn-primary-2:hover span {
+  background: var(--vkl-text-text-2);
+  transform: rotate(0);
+  transition: 0.3s;
+}
+.vkl-btn-primary-2-2 {
+  background: var(--vkl-text-text-8);
+  color: var(--vkl-text-text-white);
+}
+.vkl-btn-primary-2-2 span.arrow-icon {
+  background: var(--vkl-text-text-white);
+  color: var(--vkl-text-text-8);
+}
+.vkl-btn-primary-2-2:hover {
+  background: var(--vkl-text-text-1);
+  color: var(--vkl-text-text-8);
+}
+.vkl-btn-primary-2-2:hover span {
+  background: var(--vkl-text-text-8);
+  color: var(--vkl-text-text-white);
+}
+.vkl-btn-primary-2-3 {
+  background: transparent;
+  border: 1px solid var(--vkl-text-text-white);
+  color: var(--vkl-text-text-white);
+  transition: 0.3s;
+}
+.vkl-btn-primary-2-3 span {
+  color: var(--vkl-text-text-8);
+  transition: 0.3s;
+}
+.vkl-btn-primary-2-3:hover {
+  background: var(--vkl-text-text-1);
+  color: var(--vkl-text-text-8);
+  border: 1px solid var(--vkl-text-text-1);
+  transition: 0.3s;
+}
+.vkl-btn-primary-2-3:hover span {
+  background: var(--vkl-text-text-white);
+  color: var(--vkl-text-text-8);
+  transition: 0.3s;
+}
+.vkl-btn-primary-2-4 {
+  background: transparent;
+  color: var(--vkl-text-text-8);
+  border: 1px solid #DCE2DD;
+}
+
+.vl-thumb-btn .vkl-btn-primary-2 {
+  background: var(--vkl-text-text-1);
+  color: var(--vkl-text-text-8) !important;
+}
+.vl-thumb-btn .vkl-btn-primary-2:hover {
+  background: var(--vkl-text-text-white);
+}
+
+@media (max-width: 575px) {
+  .vkl-hero-btn-wrap .vkl-btn-primary-2.vkl-btn-primary-2-2 {
+    margin-top: 25px;
+  }
 }
 
 .vl-btn {
@@ -7175,9 +7265,26 @@ p {
 
 .vkl-footer-large-title {
   color: var(--vkl-text-text-black);
-  font-size: 164px;
+  font-size: 184px;
   line-height: 128px;
   transition: 0.3s;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .vkl-footer-large-title {
+    font-size: 130px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .vkl-footer-large-title {
+    font-size: 96px;
+    line-height: 96px;
+  }
+}
+@media (max-width: 575px) {
+  .vkl-footer-large-title {
+    font-size: 50px;
+    line-height: 50px;
+  }
 }
 
 .vkl-footer-newslater-form4 {
@@ -8226,8 +8333,8 @@ input[type=date]:focus {
   top: 8px;
 }
 .vkl-cta-from-area .vkl-cta-form-btn-2 {
-  right: 4px;
-  top: 7px;
+  right: 5px;
+  top: 8px;
 }
 .vkl-cta-from-area-2 {
   width: 370px;
@@ -12256,6 +12363,11 @@ input[type=date]:focus {
 }
 .vkl-appointment-menulist-6 a {
   border-right: 1px solid var(--vkl-text-text-white);
+}
+
+.vkl-hero-content.vkl-hero-content-2 {
+  position: relative;
+  z-index: 1;
 }
 
 .vkl-banner-shape2 {

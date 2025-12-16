@@ -208,15 +208,15 @@ if ($('.vlServicetActive2').length) {
     const vlServicetActive2 = new Swiper('.vlServicetActive2', {
         slidesPerView: 4,
         spaceBetween: 30,
-		    loop:true,
-        speed: 3000,
-        keyboard: {
-            enabled: true,
-        },
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
+		    // loop:true,
+        // speed: 3000,
+        // keyboard: {
+        //     enabled: true,
+        // },
+        // autoplay: {
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,

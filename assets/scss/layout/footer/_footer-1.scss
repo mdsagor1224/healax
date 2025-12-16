@@ -272,9 +272,21 @@
 
 .vkl-footer-large-title{
     color: var(--vkl-text-text-black);
-    font-size: 164px;
+    font-size: 184px;
     line-height: 128px;
     transition: .3s;
+    @media #{$lg}{
+        font-size: 130px;
+    }
+    @media #{$md}{
+        font-size: 96px;
+        line-height: 96px;
+    }
+    @media #{$xs}{
+        font-size: 50px;
+        line-height: 50px;
+    }
+        
 }
 
 // footer newslater form 4 
