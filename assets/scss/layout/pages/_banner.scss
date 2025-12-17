@@ -546,3 +546,24 @@
     text-align: center;
     right: 0;
 }
+
+.vkl-before-thumb-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.before-text{
+    background: var(--vkl-text-text-1);
+    font-size: 20px;
+    line-height: 20px;
+    padding: 11px 16px;
+    display: inline-block;
+    color: var(--vkl-text-text-black);
+    text-align: center;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
