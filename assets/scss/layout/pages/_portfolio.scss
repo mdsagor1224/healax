@@ -843,6 +843,28 @@
             transition: .3s;
         }
     }
+    &-10{
+        & .vkl-work-content{
+            & .para{
+                color: rgba(255, 255, 255, 0.80);
+            }
+        }
+        & .vkl-work-arrow a{
+            height: 70px;
+            width: 70px;
+            line-height: 70px;
+            & img{
+                margin-top: -4px;
+            }
+        }
+        & .vkl-work-thumb{
+            height: 400px;
+        }
+        &::after{
+            height: 100%;
+            background: linear-gradient(180deg, rgba(31, 104, 78, 0.10) 0%, #1F684E 100%);
+        }
+    }
 }
 // work style 7 
 .vl-work-content-wrap{
@@ -1025,4 +1047,68 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+
+.vkl-before-wrap{
+    &-thumb{
+        & img{
+            border-radius: 8px;
+            height: 400px;
+            object-fit: cover;
+        }
+    }
+    &-title{
+        color: var(--vkl-text-text-white);
+        text-align: center;
+        font-size: var(--vkl-font-size-font-s20);
+        line-height: var(--vkl-specing-height20);
+        margin-top: 16px;
+    }
+}
+
+.vkl-contact-bg-wrap.vkl-margin-wrap {
+    margin-left: 45px;
+    margin-right: 45px;
+    @media #{$lg,$md,$xs}{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+.vkl-work-tag10{
+    & a{
+        font-size: var(--vkl-font-size-font-s16);
+        line-height: var(--vkl-specing-height16);
+        color: var(--vkl-text-text-white);
+        transition: .3s;
+        border-radius: 8px;
+        padding: 8px 12px;
+        display: inline-block;
+        margin-right: 8px;
+        margin-bottom: 16px;
+        border: 1px solid var(--vkl-text-text-white);
+        &:hover{
+            background: var(--vkl-text-text-1);
+            color: var(--vkl-text-text-black);
+            transition: .3s;
+            border: 1px solid var(--vkl-text-text-1);
+        }
+    }
+}
+
+.vkl-work-tag10 {
+    position: absolute;
+    top: 32px;
+    left: 48px;
+    transition: .3s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9;
+}
+
+.vkl-work-thumb-wrap-6:hover .vkl-work-tag10 {
+    opacity: 1;
+    visibility: visible;
 }

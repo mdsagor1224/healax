@@ -98,8 +98,8 @@
             }
             &-arrow{
                 & a{
-                    height: 70px;
-                    width: 70px;
+                    height: 56px;
+                    width: 56px;
                     display: grid;
                     place-content: center;
                     background: var(--vkl-bg-bg-1);
@@ -423,6 +423,11 @@
         }
     }
 }
+
+.vkl-service-item-3 .vkl-service-item-arrow a img {
+    height: 30px;
+}
+
 .vkl-service-item-2:hover .vkl-service-item-2-thumb img {
     transform: scale(1.1);
     transition: 0.3s;

@@ -5,6 +5,7 @@
 /*----------------------------------------*/
 
 .vkl-blog-item{
+    transition: .3s;
     &-tags{
         & a{
             margin-right: 8px;
@@ -87,6 +88,12 @@
     &-3{
         border: 1px solid rgba(19, 44, 18, 0.10);
         padding: 22px 20px;
+        transition: .3s;
+        &:hover{
+            background: var(--vkl-bg-bg-1);
+            transition: .3s;
+            border: 1px solid transparent;
+        }
     }
     &-content{
         &-4{
@@ -110,7 +117,9 @@
         }
     }
     &:hover{
+        transition: .3s;
         & .vkl-blog-item{
+            transition: .3s;
             &-content-4{
                 background: var(--vkl-text-text-2);
                 transition: .3s;
@@ -202,6 +211,7 @@
         }
     }
     &-6{
+         transition: .3s;
         & .vkl-blog-item{
             &-content{
                 padding: 24px;
@@ -245,10 +255,12 @@
         }
     }
     &-10{
+        transition: .3s;
        padding: 32px 24px; 
        border: 1px solid #DCE2DD;
     }
     &-9{
+         transition: .3s;
         & .blog-tags6 a{
             bottom: 16px;
             top: auto;
@@ -276,6 +288,7 @@
         }
     }
     &-8{
+        transition: .3s;
         border: 1px solid #CFD8D2;
         & .vkl-blog-item{
             &-title{
@@ -321,6 +334,7 @@
         
     }
     &-inner-2{
+    transition: .3s;
        background: var(--vkl-bg-bg-1);
         & .vkl-blog-item{
             &-content{
@@ -619,4 +633,13 @@
         line-height: var(--vkl-specing-height26);
         color: var(--vkl-text-text-3);
     }
+}
+
+.vkl-blog-item.vkl-blog-item-3:hover {
+    transition: .3s;
+    border: 1px solid var(--vkl-bg-bg-1);
+}
+
+.vkl-blog-item.vkl-blog-item-3 {
+    transition: .3s;
 }

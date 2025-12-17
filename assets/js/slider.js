@@ -208,15 +208,15 @@ if ($('.vlServicetActive2').length) {
     const vlServicetActive2 = new Swiper('.vlServicetActive2', {
         slidesPerView: 4,
         spaceBetween: 30,
-		    // loop:true,
-        // speed: 3000,
-        // keyboard: {
-        //     enabled: true,
-        // },
-        // autoplay: {
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // },
+		    loop:true,
+        speed: 3000,
+        keyboard: {
+            enabled: true,
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
@@ -246,14 +246,14 @@ if ($('.vlServiceActive3').length) {
     const vlServiceActive3 = new Swiper('.vlServiceActive3', {
         slidesPerView: 1,
         spaceBetween: 30,
-		    loop:true,
-        keyboard: {
-            enabled: true,
-        },
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
+		    // loop:true,
+        // keyboard: {
+        //     enabled: true,
+        // },
+        // autoplay: {
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // },
         navigation: {
             nextEl: ".vl-review-button-next",
             prevEl: ".vl-review-button-prev",
@@ -663,9 +663,9 @@ if ($('.vlBrandActive').length) {
       loop: true,
       loopedSlides: 3,
       navigation: {
-          nextEl: '.tp-room-details-slide-next',
-          prevEl: '.tp-room-details-slide-prev',
-      },
+            nextEl: ".vl-review-button-next",
+            prevEl: ".vl-review-button-prev",
+        },
     });
     var thumbs = new Swiper ('.tp-testimonial-thumb-active', {
       slidesPerView: 3,

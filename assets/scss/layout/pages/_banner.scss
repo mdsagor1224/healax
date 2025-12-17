@@ -13,14 +13,14 @@
         padding-bottom: 130px;
     }
     &-7{
-        padding-top: 280px;
+        padding-top: 140px;
         padding-bottom: 357px;
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
         z-index: 1;
         @media #{$xs}{
-            padding-top: 185px;
+            padding-top: 100px;
         }
         &::after{
             position: absolute;
@@ -438,7 +438,7 @@
 }
 
 .banner-8{
-    margin-top: 136px;
+    margin-top: 30px;
 }
 
 // banner area 9 
@@ -447,7 +447,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-top: 270px;
+    padding-top: 145px;
     padding-bottom: 245px;
     background: #22684E;
     @media #{$md,$xs}{
@@ -458,7 +458,7 @@
 
 .vkl-hero-content-9 {
     position: relative;
-    z-index: 999;
+    z-index: 9;
 }
 
 .vkl-banner-right9 {
@@ -493,6 +493,7 @@
     position: absolute;
     z-index: 11;
     bottom: 0;
+    bottom: -191px;
 }
 
 .vkl-banner-shape-right-bottom{
@@ -526,3 +527,13 @@
     right: 0;
     text-align: center;
 }
+
+.vkl-contact-bg-wrap.vkl-banner-4 {
+    margin-left: 45px;
+    margin-right: 45px;
+    @media #{$lg,$md,$xs}{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+

@@ -26,8 +26,6 @@
     <link rel="stylesheet" href="assets/css/plugins/odometer-theme-default.min.css">
     <!-- jrallax -->
     <link rel="stylesheet" href="assets/css/plugins/jarallax.min.css">
-    <!-- twenty css -->
-    <link rel="stylesheet" href="assets/css/plugins/twentytwenty.css">
     <!-- custom css -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -41,9 +39,9 @@
         </div>
     </div>
 
-    <!--================= vkl header section start =================-->
+  <!--================= vkl header section start =================-->
     <header>
-        <div id="vl-header-sticky" class="vl-header-area">
+        <div id="vl-header-sticky" class="vl-header-area vl-transparent-header">
             <div class="container vkl-blur-bg-1 br-8">
                 <div class="row align-items-center">
                     <div class="col-xl-2 col-md-6 col-6">
@@ -56,7 +54,8 @@
                             <nav class="vl-mobile-menu-active">
                                 <ul>
                                     <li class="has-dropdown">
-                                        <a href="#">Home <span><i class="fa-regular fa-angle-down"></i></span></a>
+                                        <a href="#">Home <span class="menu-dwn-arrow"><i
+                                                    class="fa-regular fa-angle-down"></i></span></a>
                                         <div class="vl-mega-menu">
                                             <div class="vl-home-menu">
                                                 <div
@@ -208,7 +207,7 @@
                                     </li>
 
                                     <li><a href="about.html">About us</a></li>
-                                    <li class="has-dropdown"><a href="#">Services <span><i
+                                    <li class="has-dropdown"><a href="#">Services <span class="menu-dwn-arrow"><i
                                                     class="fa-regular fa-angle-down"></i></span></a>
                                         <ul class="sub-menu">
                                             <li><a href="service.html">Service</a></li>
@@ -217,12 +216,12 @@
                                             <li><a href="service-single.html">Service Single</a></li>
                                         </ul>
                                     </li>
-                                    <li class="has-dropdown"><a href="#">Pages <span><i
+                                    <li class="has-dropdown"><a href="#">Pages <span class="menu-dwn-arrow"><i
                                                     class="fa-regular fa-angle-down"></i></span></a>
                                         <ul class="sub-menu">
                                             <li><a href="appointment.html">Appointment</a></li>
                                             <li class="has-dropdown"><a href="#">Case Studies <span
-                                                        class="arrow-right"><i
+                                                        class="menu-dwn-arrow2"><i
                                                             class="fa-regular fa-angle-right"></i></span></a>
                                                 <ul class="sub-menu">
                                                     <li><a href="case.html">Case Studies</a></li>
@@ -240,14 +239,14 @@
                                             <li><a href="404.html">404</a></li>
                                         </ul>
                                     </li>
-                                    <li class="has-dropdown"><a href="#">Blog <span><i
+                                    <li class="has-dropdown"><a href="#">Blog <span class="menu-dwn-arrow"><i
                                                     class="fa-regular fa-angle-down"></i></span></a>
                                         <ul class="sub-menu">
                                             <li><a href="blog1.html">Blog</a></li>
                                             <li><a href="blog2.html">Blog V2</a></li>
                                             <li><a href="blog3.html">Blog V3</a></li>
                                             <li class="has-dropdown"><a href="#">Blog Detsils <span
-                                                        class="arrow-right"><i
+                                                        class="menu-dwn-arrow2"><i
                                                             class="fa-regular fa-angle-right"></i></span></a>
                                                 <ul class="sub-menu">
                                                     <li><a href="blog-left.html">Blog Left</a></li>
@@ -265,7 +264,7 @@
                     <div class="col-xl-2 col-md-6 col-6">
                         <!-- header btn -->
                         <div class="vl-header-btn d-none d-xl-block">
-                            <a href="contact.html" class="vkl-primary-btn">Get Started
+                            <a href="tel:2343454574" class="vkl-primary-btn">Get Started
                             </a>
                         </div>
                         <!-- action btn -->
@@ -306,14 +305,18 @@
             </div>
 
 
-            <div class="vl-offcanvas-info mb-40">
+            <div class="vl-offcanvas-info mb-30">
                 <h3 class="vl-offcanvas-sm-title mb-20">Contact Us</h3>
-                <span><a href="#">+57 9954 6476</a></span>
-                <span><a href="#">hello@healex.com</a></span>
-                <span><a href="#">Los Angles,California</a></span>
+                <a href="#"><span><img src="assets/img/icon/footer-ph-1.1.svg" alt=""></span> +57 9954 6476</a>
+                <a href="#"><span><img src="assets/img/icon/footer-mail-1.1.svg" alt=""></span> hello@healex.com</a>
+                <a href="#"><span><img src="assets/img/icon/vl-location-1.1.svg" alt=""></span>Los Angles,California</a>
             </div>
 
-            <div class="vl-offcanvas-social mb-40">
+            <div class="vkl-offcanvas-btn mb-30">
+                <a href="contact.html" class="w-100 text-center vkl-primary-btn">Contact Now</a>
+            </div>
+
+            <div class="vl-offcanvas-social mb-30">
                 <h3 class="vl-offcanvas-sm-title mb-20">Follow Us</h3>
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -323,12 +326,10 @@
         </div>
     </div>
     <div class="vl-offcanvas-overlay"></div>
-
     <!-- offcanvas menu end -->
 
     <!--================= vkl header section End =================-->
-    <div id="smooth-wrapper">
-        <div id="smooth-content">
+    
             <main>
                 <!--================= vkl breadcrumb section start =================-->
                 <section class="vkl-banner-area vkl-banner-area-2 vkl-cmn-bg fix p-relative"
@@ -570,37 +571,34 @@
 
 
                 <!--================= Cta section start =================-->
-                <section class="vkl-cta-area vkl-cmn-bg"
-                    style="background-image: url(./assets/img/physiotherapy/cta/vl-cta-thumb1.1.webp);">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-8 col-md-9">
-                                <!-- cta content -->
-                                <div class="vkl-cta-content">
-                                    <!-- vkl section title start -->
-                                    <div class="vkl-section-title vkl-section-title-white">
-                                        <h2 class="title text-effect">Ready to Take the First Step Toward a Pain-Free
-                                            Life?</h2>
-                                        <p class="desc pt-16 pb-24">Don’t let pain or limited movement hold you back any
-                                            longer. Our expert physiotherapists are here to help you recover,
-                                            strengthen.</p>
-                                    </div> <!-- vkl section title end -->
-                                    <div class="vkl-cta-from-area">
-                                        <form action="#">
-                                            <input type="email" placeholder="Email Address">
-                                            <div class="vkl-cta-form-btn">
-                                                <button type="submit" class="vkl-primary-btn">Subscribe</button>
-                                            </div>
-
-                                        </form>
+        <section class="vkl-cta-area vkl-cmn-bg parallaxie"
+            style="background-image: url(./assets/img/physiotherapy/cta/vl-cta-thumb1.1.webp);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-8 col-md-9">
+                        <!-- cta content -->
+                        <div class="vkl-cta-content">
+                            <!-- vkl section title start -->
+                            <div class="vkl-section-title vkl-section-title-white">
+                                <h2 class="title text-effect">Ready to Take the First Step Toward a Pain-Free Life?</h2>
+                                <p class="desc pt-16 pb-24">Don’t let pain or limited movement hold you back any longer.
+                                    Our expert physiotherapists are here to help you recover, strengthen.</p>
+                            </div> <!-- vkl section title end -->
+                            <div class="vkl-cta-from-area">
+                                <form action="#">
+                                    <input type="email" placeholder="Email Address">
+                                    <div class="vkl-cta-form-btn">
+                                        <button type="submit" class="vkl-primary-btn">Subscribe</button>
                                     </div>
-                                </div>
+
+                                </form>
                             </div>
                         </div>
                     </div>
-                </section>
-                <!--================= Cta section End =================-->
-
+                </div>
+            </div>
+        </section>
+        <!--================= Cta section End =================-->
                 <!-- progress -->
                 <div class="paginacontainer">
                     <div class="progress-wrap">
@@ -614,114 +612,110 @@
 
 
             <!--================= Footer section start =================-->
-            <footer class="vl-footer vkl-bg-1 pt-80">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-3 col-md-6 mb-30">
-                            <!-- footer widget 1 -->
-                            <div class="vl-footer-widget-1">
-                                <div class="vl-footer-logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo-black.webp" alt=""></a>
-                                </div>
-                                <div class="vl-footer-content">
-                                    <p class="para pt-16 pb-32">We’re team licensed physiotherapists dedicate to helping
-                                        you move better, feel stronger, live pain-free. Through personalized care,
-                                        expert guidance, & proven techniques, support recovery.</p>
-                                </div>
-                                <!-- social -->
-                                <div class="social-area">
-                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                                </div>
+            <footer class="vl-footer vkl-bg-1 fix pt-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-md-6">
+                    <!-- footer widget 1 -->
+                    <div class="vl-footer-widget-1 mb-60">
+                        <div class="vl-footer-logo">
+                            <a href="index.html"><img src="assets/img/logo/logo-black.webp" alt=""></a>
+                        </div>
+                        <div class="vl-footer-content">
+                            <p class="para pt-16 pb-32">We’re team licensed physiotherapists dedicate to helping you
+                                move better, feel stronger, live pain-free. Through personalized care, expert guidance,
+                                & proven techniques, support recovery.</p>
+                        </div>
+                        <!-- social -->
+                        <div class="social-area">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="vl-footer-widget-3 mb-60">
+                        <h3 class="vl-footer-widget-title mb-30">Working Hours</h3>
+                        <div class="vkl-work-hour-wrap vkl-bg-2 br-8">
+                            <!-- single working hour -->
+                            <div class="vkl-content-flex">
+                                <h5 class="day-title">Mon-Wed</h5>
+                                <p class="para">8:00 AM - 7:00 PM</p>
+                            </div>
+                            <!-- single working hour -->
+                            <div class="vkl-content-flex">
+                                <h5 class="day-title">Thu-Sat</h5>
+                                <p class="para">8:00 AM - 5:00 PM</p>
+                            </div>
+                            <!-- single working hour -->
+                            <div class="vkl-content-flex">
+                                <h5 class="day-title">Sunday</h5>
+                                <p class="para">Full Day Closed</p>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-md-6 mb-30">
-                            <div class="vl-footer-widget-3">
-                                <h3 class="vl-footer-widget-title mb-30">Working Hours</h3>
-                                <div class="vkl-work-hour-wrap vkl-bg-2 br-8">
-                                    <!-- single working hour -->
-                                    <div class="vkl-content-flex">
-                                        <h5 class="day-title">Mon-Wed</h5>
-                                        <p class="para">8:00 AM - 7:00 PM</p>
-                                    </div>
-                                    <!-- single working hour -->
-                                    <div class="vkl-content-flex">
-                                        <h5 class="day-title">Thu-Sat</h5>
-                                        <p class="para">8:00 AM - 5:00 PM</p>
-                                    </div>
-                                    <!-- single working hour -->
-                                    <div class="vkl-content-flex">
-                                        <h5 class="day-title">Sunday</h5>
-                                        <p class="para">Full Day Closed</p>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-6">
+                    <div class="vl-footer-widget-2 mb-60">
+                        <h3 class="vl-footer-widget-title mb-30">Top Links</h3>
+                        <div class="vl-footer-menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="service.html">Services</a></li>
+                                <li><a href="testimonial.html">Testimonial</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
                         </div>
-                        <div class="col-xl-2 col-md-6 mb-30">
-                            <div class="vl-footer-widget-2">
-                                <h3 class="vl-footer-widget-title mb-30">Top Links</h3>
-                                <div class="vl-footer-menu">
-                                    <ul>
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li><a href="service.html">Services</a></li>
-                                        <li><a href="testimonial.html">Testimonial</a></li>
-                                        <li><a href="contact.html">Contact Us</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                </div>
 
-                        <div class="col-xl-3 col-md-6 mb-30">
-                            <!-- footer widget 4 -->
-                            <div class="vl-footer-widget-4">
-                                <h3 class="vl-footer-widget-title mb-30">Contact Us</h3>
-                                <!-- icon list -->
-                                <div class="vl-icon-list">
-                                    <ul>
-                                        <li><a href="#"><span class="mr-8"><img src="assets/img/icon/footer-ph-1.1.svg"
-                                                        alt=""></span>+1 123 456 7890</a></li>
-                                        <li><a href="#"><span class="mr-8"><img
-                                                        src="assets/img/icon/vl-location-1.1.svg" alt=""></span>421
-                                                Allen, Mexico 4233</a></li>
-                                        <li><a href="#"><span class="mr-8"><img
-                                                        src="assets/img/icon/footer-mail-1.1.svg"
-                                                        alt=""></span>Physiotherapy@com</a></li>
-                                        <li><a href="#"><span class="mr-8"><img src="assets/img/icon/footer-web-1.1.svg"
-                                                        alt=""></span>info@healextraphy.com</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                <div class="col-xl-3 col-md-6">
+                    <!-- footer widget 4 -->
+                    <div class="vl-footer-widget-4 mb-30">
+                        <h3 class="vl-footer-widget-title mb-30">Contact Us</h3>
+                        <!-- icon list -->
+                        <div class="vl-icon-list">
+                            <ul>
+                                <li><a href="#"><span class="mr-8"><img src="assets/img/icon/footer-ph-1.1.svg"
+                                                alt=""></span>+1 123 456 7890</a></li>
+                                <li><a href="#"><span class="mr-8"><img src="assets/img/icon/vl-location-1.1.svg"
+                                                alt=""></span>421 Allen, Mexico 4233</a></li>
+                                <li><a href="#"><span class="mr-8"><img src="assets/img/icon/footer-mail-1.1.svg"
+                                                alt=""></span>Physiotherapy@com</a></li>
+                                <li><a href="#"><span class="mr-8"><img src="assets/img/icon/footer-web-1.1.svg"
+                                                alt=""></span>info@healextraphy.com</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="vl-copy-righ1t">
-                            <div class="row">
-                                <div class="col-md-6 mb-30">
-                                    <div class="vl-footer-copy-right-widget">
-                                        <p class="para">© Copyright 2025 Healex. All Right Reserved</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-30">
-                                    <div class="vl-copy-right-menu">
-                                        <ul>
-                                            <li><a href="#">Terms & Conditions</a></li>
-                                            <li><a href="#">Privacy Policy</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            <!--================= Footer section End =================-->
+            </div>
         </div>
-    </div>
+        <div class="container">
+            <div class="row">
+                <div class="vl-copy-righ1t">
+                    <div class="row">
+                        <div class="col-md-6 mb-30">
+                            <div class="vl-footer-copy-right-widget">
+                                <p class="para">© Copyright 2025 Healex. All Right Reserved</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-30">
+                            <div class="vl-copy-right-menu">
+                                <ul>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+            <!--================= Footer section End =================-->
 
     <!-- js file -->
     <script src="assets/js/plugins/jquery-3.7.1.min.js"></script>
@@ -743,16 +737,12 @@
     <script src="assets/js/plugins/odometer.min.js" defer></script>
     <!-- jarallax js -->
     <script src="assets/js/plugins/jarallax.min.js" defer></script>
+    <script src="assets/js/plugins/parallaxie.js"></script>
     <!-- ScrollSmoother js -->
-    <script src="assets/js/plugins/ScrollSmoother.min.js" defer></script>
+    <script src="assets/js/plugins/SmoothScroll.js"></script>
     <script src="assets/js/plugins/plugin.js" defer></script>
-    <!-- image compression  -->
-    <script src="assets/js/plugins/jquery.event.move.js" defer></script>
-    <script src="assets/js/plugins/jquery.twentytwenty.js" defer></script>
-
     <!-- custom js -->
     <script src="assets/js/main.js" defer></script>
     <script src="assets/js/slider.js" defer></script>
 </body>
-
 </html>

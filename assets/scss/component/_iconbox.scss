@@ -27,6 +27,11 @@
             background: rgba(255, 255, 255, 0.10);
         }
     }
+    &-3{
+        & a{
+            background: var(--vkl-bg-bg-1);
+        }
+    }
 }
 
 // vkl check icon box   

@@ -2,25 +2,6 @@
     "use strict";
 
 
-
-	$(window).on("load", function(){
-		$(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.5});
-		$(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
-	});
-
-
-	// Expand gallery
-    const slides = document.querySelectorAll('.slide');
-    let active = document.querySelector('.slide.active');
-  
-    slides.forEach((slide) => {
-    slide.onmouseover = () => {
-        active.classList.remove('active');
-        active = slide;
-        slide.classList.add('active');
-    }
-    });
-	
 	/* ================================
         back-to-top
     ================================ */
