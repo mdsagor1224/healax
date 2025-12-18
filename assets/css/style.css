@@ -12918,6 +12918,10 @@ input[type=date]:focus {
   bottom: 20px;
   left: 20px;
 }
+.before-text-2 {
+  left: auto;
+  right: 20px;
+}
 
 /*----------------------------------------*/
 /*  7.9 Pricing css
