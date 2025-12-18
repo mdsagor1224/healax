@@ -81,6 +81,17 @@
             padding-right: 30px;
         }
     }
+    &-white{
+        & .vkl-counter-title{
+            color: var(--vkl-text-text-white);
+        }
+        & .symbol{
+            color: var(--vkl-text-text-white);
+        } 
+        & .vkl-counter-desc{
+            color: rgb(255, 255, 255, 0.9);
+        }  
+    }
 }
 
 // counter style 3 
